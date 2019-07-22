@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<decorators defaultdir="/WEB-INF/decorators">
+	<!-- Any urls that are excluded will never be decorated by Sitemesh -->
+	<excludes>
+		<pattern>/assets/*</pattern>
+		<pattern>/fakultas/*</pattern>
+		<pattern>/obat/*</pattern>
+		<pattern>/biaya/*</pattern>
+		<pattern>/penyakit/*</pattern>
+		<pattern>/pasien/*</pattern>
+		<pattern>/dokter/*</pattern>
+		<pattern>/role/*</pattern>
+		<pattern>/user/*</pattern>
+		<pattern>/kunjungan/*</pattern>
+		<pattern>/resep/*</pattern>
+		<pattern>/rekam/*</pattern>
+	</excludes>
+
+	<decorator name="login" page="login.jsp">
+		<pattern>/login.html</pattern>
+		<pattern>/select-outlet.html</pattern>
+	</decorator>
+	
+	<decorator name="main" page="main.jsp">
+		<pattern>/*</pattern>
+	</decorator>
+
+</decorators>
